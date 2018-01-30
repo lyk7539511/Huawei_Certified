@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="E82EA27D-A6E1-4f6c-9DB3-E58C9DE65C63" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B9-19-A2" com_port="2001" bootmode="0" cx="1013.000000" cy="584.000000" edit_left="1040" edit_top="638">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="0A4398A6-4B4C-4575-9534-33E43484198C" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-73-67-3E" com_port="2002" bootmode="0" cx="1410.000000" cy="584.000000" edit_left="1437" edit_top="638">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="80E8B31C-8020-404b-9E7B-E8DC6E6FF681" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-0C-53-DA" com_port="2000" bootmode="0" cx="1201.000000" cy="238.000000" edit_left="1228" edit_top="292">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="85ACA6FA-4DDA-442e-B736-DF84DAA3F46E" name="FRSW1" poe="0" model="FRSW" settings="1-102-2-201;1-103-3-301;" system_mac="" com_port="0" bootmode="0" cx="1201.000000" cy="428.000000" edit_left="1228" edit_top="482">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Serial" interfacename="Serial" count="16" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="80E8B31C-8020-404b-9E7B-E8DC6E6FF681" destDeviceID="85ACA6FA-4DDA-442e-B736-DF84DAA3F46E">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="1228.000000" srcBoundRect_Y="308.183777" srcOffset_X="-30.000000" srcOffset_Y="10.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="1228.000000" tarBoundRect_Y="411.816223" tarOffset_X="14.000000" tarOffset_Y="-5.000000" />
+        </line>
+        <line srcDeviceID="E82EA27D-A6E1-4f6c-9DB3-E58C9DE65C63" destDeviceID="85ACA6FA-4DDA-442e-B736-DF84DAA3F46E">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="1073.232544" srcBoundRect_Y="583.424011" srcOffset_X="6.000000" srcOffset_Y="-8.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="1194.767456" tarBoundRect_Y="482.575958" tarOffset_X="-80.000000" tarOffset_Y="-9.000000" />
+        </line>
+        <line srcDeviceID="85ACA6FA-4DDA-442e-B736-DF84DAA3F46E" destDeviceID="0A4398A6-4B4C-4575-9534-33E43484198C">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="1262.606567" srcBoundRect_Y="480.830719" srcOffset_X="23.000000" srcOffset_Y="-7.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1402.393433" tarBoundRect_Y="585.169312" tarOffset_X="-71.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1192,308" endpt="1192,308" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1197,309" endpt="1041,560" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1041,560" endpt="1041,560" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1268,310" endpt="1415,553" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="1184" top="513" right="1271" bottom="530" content="10.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1189" top="393" right="1223" bottom="425" content="102&#x0D;&#x0A;103" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1126" top="492" right="1153" bottom="509" content="201" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1313" top="494" right="1340" bottom="511" content="301" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

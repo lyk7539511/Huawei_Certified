@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="E5B61C2B-E4D0-4d6c-889A-A27A8FAE846D" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-3A-36-AB" com_port="2000" bootmode="0" cx="647.000000" cy="129.000000" edit_left="674" edit_top="183">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="68D1C97A-B736-43c2-A6CC-5DC27CBC882F" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-B8-66-77" com_port="2001" bootmode="0" cx="938.000000" cy="128.000000" edit_left="965" edit_top="182">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="E5B61C2B-E4D0-4d6c-889A-A27A8FAE846D" destDeviceID="68D1C97A-B736-43c2-A6CC-5DC27CBC882F">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="717.183533" srcBoundRect_Y="155.851608" srcOffset_X="-15.000000" srcOffset_Y="8.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="921.816467" tarBoundRect_Y="155.148392" tarOffset_X="-35.000000" tarOffset_Y="9.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="753" top="124" right="863" bottom="141" content="192.168.1.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="713" top="180" right="740" bottom="197" content="1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="902" top="184" right="929" bottom="201" content="1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="765" top="34" right="844" bottom="61" content="Telnet" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="925" top="215" right="1057" bottom="247" content="password£ºhuawei&#x0D;&#x0A;level£º3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

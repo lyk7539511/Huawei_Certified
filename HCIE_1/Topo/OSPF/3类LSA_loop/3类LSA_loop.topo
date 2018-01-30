@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="518B7590-E37D-4989-AD1F-A3F4A78D2061" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D2-22-A0" com_port="2000" bootmode="0" cx="1098.000000" cy="272.000000" edit_left="1125" edit_top="326">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="01248062-9210-43d8-AB3B-D7F8F74B679A" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BF-5B-BC" com_port="2001" bootmode="0" cx="1406.000000" cy="272.000000" edit_left="1433" edit_top="326">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="D9DDEC6F-7150-42e9-A48C-F40ED26DAA4C" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-43-14-96" com_port="2002" bootmode="0" cx="1098.000000" cy="509.000000" edit_left="1125" edit_top="563">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="577CF3F8-4C95-45ae-A5ED-1D5B91E8E46C" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-8F-0E-E5" com_port="2003" bootmode="0" cx="1406.000000" cy="509.000000" edit_left="1433" edit_top="563">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="518B7590-E37D-4989-AD1F-A3F4A78D2061" destDeviceID="01248062-9210-43d8-AB3B-D7F8F74B679A">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="1168.183716" srcBoundRect_Y="299.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1389.816284" tarBoundRect_Y="299.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="D9DDEC6F-7150-42e9-A48C-F40ED26DAA4C" destDeviceID="577CF3F8-4C95-45ae-A5ED-1D5B91E8E46C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="1168.183716" srcBoundRect_Y="536.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1389.816284" tarBoundRect_Y="536.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="518B7590-E37D-4989-AD1F-A3F4A78D2061" destDeviceID="D9DDEC6F-7150-42e9-A48C-F40ED26DAA4C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="1125.000000" srcBoundRect_Y="342.183777" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="1125.000000" tarBoundRect_Y="492.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="01248062-9210-43d8-AB3B-D7F8F74B679A" destDeviceID="577CF3F8-4C95-45ae-A5ED-1D5B91E8E46C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="1433.000000" srcBoundRect_Y="342.183777" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="1433.000000" tarBoundRect_Y="492.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="0" color="16744448" upleftcorner="1136,199" width="291" height="162" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="1140,504" width="276" height="95" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="1061,308" width="111" height="226" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="1400,314" width="84" height="220" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1426,287" endpt="1357,251" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1130,542" endpt="1213,571" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="1247" top="256" right="1258" bottom="273" content="0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1257" top="576" right="1268" bottom="593" content="0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1082" top="432" right="1093" bottom="449" content="1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1446" top="441" right="1457" bottom="458" content="1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1171" top="636" right="1364" bottom="653" content="AR2的loop能否访问AR的loop" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1066" top="662" right="1470" bottom="679" content="ABR从非骨干区域接收的3类LSA只放入LSDB，不参与路由计算" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
