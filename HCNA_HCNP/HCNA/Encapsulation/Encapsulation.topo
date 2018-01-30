@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="126B75E3-4A76-4791-A351-3435EDC4400A" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-49-41-3B -ipaddr 192.168.1.2 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-5F-62-8E" com_port="0" bootmode="0" cx="419.000000" cy="50.000000" edit_left="446" edit_top="104">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="624B5D68-AD9D-4d1b-A0FA-302D14FF81F7" name="Client1" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-63-53-C9 -ipaddr 192.168.1.1 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-C2-0E-C6" com_port="0" bootmode="0" cx="10.000000" cy="50.000000" edit_left="37" edit_top="104">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="8D09B344-4DB2-48a1-8A59-62C348DFDE4F" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-02-38-2F" com_port="2000" bootmode="0" cx="209.000000" cy="50.000000" edit_left="236" edit_top="104">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="624B5D68-AD9D-4d1b-A0FA-302D14FF81F7" destDeviceID="8D09B344-4DB2-48a1-8A59-62C348DFDE4F">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="80.183769" srcBoundRect_Y="77.000000" srcOffset_X="-27.000000" srcOffset_Y="9.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="192.816238" tarBoundRect_Y="77.000000" tarOffset_X="-50.000000" tarOffset_Y="10.000000" />
+        </line>
+        <line srcDeviceID="8D09B344-4DB2-48a1-8A59-62C348DFDE4F" destDeviceID="126B75E3-4A76-4791-A351-3435EDC4400A">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="279.183777" srcBoundRect_Y="77.000000" srcOffset_X="-24.000000" srcOffset_Y="12.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="402.816223" tarBoundRect_Y="77.000000" tarOffset_X="-38.000000" tarOffset_Y="13.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="11,575" endpt="687,575" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="9,458" width="686" height="236" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="11,836" endpt="601,837" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="9,708" width="600" height="252" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="13,321" endpt="599,323" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="9,198" width="595" height="248" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="0" color="255" upleftcorner="0,0" width="0" height="0" startpt="745,367" endpt="1601,367" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="255" upleftcorner="742,197" width="861" height="342" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="181" top="40" right="291" bottom="57" content="192.168.1.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="23" top="117" right="50" bottom="134" content="1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="431" top="117" right="458" bottom="134" content="1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="749" top="207" right="866" bottom="224" content="应用层：FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="749" top="240" right="972" bottom="257" content="传输层：TCP(2049-&gt;21)|FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="747" top="273" right="1272" bottom="290" content="网络层：IP(192.168.1.1-&gt;192.168.1.2 Protocol=6)|TCP(2049-&gt;21)|FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="746" top="306" right="1520" bottom="323" content="数据链路层：帧头(3b&lt;-c9 type=0x0800)|IP(192.168.1.1-&gt;192.168.1.2 Protocol=6)|TCP(2049-&gt;21)|FTPdata|FCS" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="746" top="339" right="871" bottom="356" content="物理层：01010100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="885" top="207" right="927" bottom="224" content="(PDU)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="995" top="241" right="1044" bottom="258" content="数据段" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="15" top="210" right="313" bottom="227" content="传输层：TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="238" right="502" bottom="255" content="网络层：192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="263" right="584" bottom="280" content="数据链路层：c9-&gt;3b|192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="288" right="343" bottom="305" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="16" top="417" right="345" bottom="434" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="389" right="584" bottom="406" content="数据链路层：c9-&gt;3b|192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="363" right="502" bottom="380" content="网络层：192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="336" right="313" bottom="353" content="传输层：TCP(2049-&gt;21 seq=0 ack=0 SYN=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="549" right="343" bottom="566" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="524" right="630" bottom="541" content="数据链路层：3b-&gt;c9|192.168.1.2-&gt;192.168.1.1|TCP(21-&gt;2049 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="498" right="548" bottom="515" content="网络层：192.168.1.2-&gt;192.168.1.1|TCP(21-&gt;2049 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="471" right="359" bottom="488" content="传输层：TCP(21-&gt;2019 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="16" top="932" right="345" bottom="949" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="851" right="313" bottom="868" content="传输层：TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="878" right="502" bottom="895" content="网络层：192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="904" right="584" bottom="921" content="数据链路层：c9-&gt;3b|192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="803" right="343" bottom="820" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="778" right="584" bottom="795" content="数据链路层：c9-&gt;3b|192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="752" right="502" bottom="769" content="网络层：192.168.1.1-&gt;192.168.1.2|TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="15" top="725" right="313" bottom="742" content="传输层：TCP(2049-&gt;21 seq=1 ack=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="13" top="665" right="342" bottom="682" content="物理层：10101001010100101010100101000010101" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="13" top="640" right="629" bottom="657" content="数据链路层：3b-&gt;c9|192.168.1.2-&gt;192.168.1.1|TCP(21-&gt;2049 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="614" right="547" bottom="631" content="网络层：192.168.1.2-&gt;192.168.1.1|TCP(21-&gt;2049 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="14" top="587" right="358" bottom="604" content="传输层：TCP(21-&gt;2019 seq=0 ack=1 SYN=1 ACK=1)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="124" top="157" right="409" bottom="184" content="TCP三次握手：封装解封装" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="1291" top="275" right="1340" bottom="292" content="数据包" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="1535" top="306" right="1584" bottom="323" content="数据帧" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="746" top="511" right="871" bottom="528" content="物理层：01010100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1535" top="478" right="1584" bottom="495" content="数据帧" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="746" top="478" right="1520" bottom="495" content="数据链路层：帧头(3b&lt;-c9 type=0x0800)|IP(192.168.1.1-&gt;192.168.1.2 Protocol=6)|TCP(2049-&gt;21)|FTPdata|FCS" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1291" top="447" right="1340" bottom="464" content="数据包" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="747" top="445" right="1272" bottom="462" content="网络层：IP(192.168.1.1-&gt;192.168.1.2 Protocol=6)|TCP(2049-&gt;21)|FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="995" top="413" right="1044" bottom="430" content="数据段" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="749" top="412" right="972" bottom="429" content="传输层：TCP(2049-&gt;21)|FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="885" top="379" right="927" bottom="396" content="(PDU)" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="749" top="379" right="866" bottom="396" content="应用层：FTPdata" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="840" top="157" right="1064" bottom="184" content="完整封装解封装过程" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-32576" charset="1" />
+    </txttips>
+</topo>

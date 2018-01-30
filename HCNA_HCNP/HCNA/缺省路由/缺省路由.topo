@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.500">
+    <devices>
+        <dev id="8B4C1AFA-E5FA-4343-81C5-5997819AACEF" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-19-48-BE" com_port="2001" bootmode="0" cx="416.000000" cy="197.000000" edit_left="443" edit_top="251">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="7C939E7C-449C-4517-8480-79A67AB979B8" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-8E-50-5A" com_port="2000" bootmode="0" cx="182.000000" cy="198.000000" edit_left="209" edit_top="252">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="7C939E7C-449C-4517-8480-79A67AB979B8" destDeviceID="8B4C1AFA-E5FA-4343-81C5-5997819AACEF">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="252.183365" srcBoundRect_Y="224.815460" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="399.816620" tarBoundRect_Y="224.184540" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="219" top="312" right="434" bottom="329" content="访问一个不存在的ip会造成环路" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="218" top="149" right="442" bottom="176" content="缺省路由存在的问题" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+    </txttips>
+</topo>

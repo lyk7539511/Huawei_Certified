@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="01D5947E-AB52-4c99-831A-A0F3425E9FA0" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-3B-5F-30" com_port="2001" bootmode="0" cx="1083.000000" cy="384.000000" edit_left="1110" edit_top="438">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="1" />
+        </dev>
+        <dev id="75E65356-B509-4ea4-A7B9-891F8260E820" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-7C-46-EB" com_port="2003" bootmode="0" cx="1284.000000" cy="485.000000" edit_left="1311" edit_top="539">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8E4F9CDE-16C1-459e-8D5F-3B59760BDEEA" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-F1-4E-87" com_port="2002" bootmode="0" cx="1083.000000" cy="605.000000" edit_left="1110" edit_top="659">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="891E0D44-CD2E-45eb-BC94-56A65D93233A" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-51-56" com_port="2000" bootmode="0" cx="880.000000" cy="491.000000" edit_left="907" edit_top="545">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="1" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="891E0D44-CD2E-45eb-BC94-56A65D93233A" destDeviceID="8E4F9CDE-16C1-459e-8D5F-3B59760BDEEA">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="944.652771" srcBoundRect_Y="539.144897" srcOffset_X="-56.000000" srcOffset_Y="21.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="1072.347290" tarBoundRect_Y="610.855103" tarOffset_X="-45.000000" tarOffset_Y="10.000000" />
+        </line>
+        <line srcDeviceID="01D5947E-AB52-4c99-831A-A0F3425E9FA0" destDeviceID="75E65356-B509-4ea4-A7B9-891F8260E820">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="1148.586304" srcBoundRect_Y="430.389130" srcOffset_X="16.000000" srcOffset_Y="-6.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="1272.413696" tarBoundRect_Y="492.610870" tarOffset_X="8.000000" tarOffset_Y="-27.000000" />
+        </line>
+        <line srcDeviceID="8E4F9CDE-16C1-459e-8D5F-3B59760BDEEA" destDeviceID="75E65356-B509-4ea4-A7B9-891F8260E820">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="1147.078491" srcBoundRect_Y="609.863586" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="1273.921509" tarBoundRect_Y="534.136414" tarOffset_X="1.000000" tarOffset_Y="20.000000" />
+        </line>
+        <line srcDeviceID="891E0D44-CD2E-45eb-BC94-56A65D93233A" destDeviceID="01D5947E-AB52-4c99-831A-A0F3425E9FA0">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="945.201843" srcBoundRect_Y="497.864044" srcOffset_X="15.000000" srcOffset_Y="3.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1071.798096" tarBoundRect_Y="431.135956" tarOffset_X="-84.000000" tarOffset_Y="-4.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="884,519" endpt="813,519" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1329,513" endpt="1399,513" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips />
+</topo>

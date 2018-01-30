@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="D2DFFD2C-96A7-4ea8-A440-DFA4B2907BCA" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-5D-5C-A5" com_port="2000" bootmode="0" cx="897.000000" cy="461.000000" edit_left="924" edit_top="515">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="BA48DCF8-3A8A-40ee-B39D-23CE1377FE03" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-E8-14-CB" com_port="2001" bootmode="0" cx="1232.000000" cy="459.000000" edit_left="1259" edit_top="513">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="D2DFFD2C-96A7-4ea8-A440-DFA4B2907BCA" destDeviceID="BA48DCF8-3A8A-40ee-B39D-23CE1377FE03">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="967.182983" srcBoundRect_Y="487.742188" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1215.817017" tarBoundRect_Y="486.257813" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="821" top="577" right="1444" bottom="609" content="调整Update和Age定时器分别为10秒和60秒，Garbage-collect请自行决定；&#x0D;&#x0A;RIP路由信息在接口up/down之后，容易产生信息不同步的情况，请使用相关命令解决该问题。" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1044" top="441" right="1154" bottom="458" content="192.168.1.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="776" top="476" right="863" bottom="493" content="10.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1306" top="476" right="1408" bottom="493" content="172.16.0.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

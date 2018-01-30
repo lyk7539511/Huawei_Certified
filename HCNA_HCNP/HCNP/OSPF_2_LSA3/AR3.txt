@@ -1,0 +1,236 @@
+<AR3>dis ospf lsdb rou
+
+	 OSPF Process 1 with Router ID 3.3.3.3
+		         Area: 0.0.0.0
+		 Link State Database 
+
+
+  Type      : Router
+  Ls id     : 2.2.2.2
+  Adv rtr   : 2.2.2.2  
+  Ls age    : 1433 
+  Len       : 36 
+  Options   :  ABR  E  
+  seq#      : 80000004 
+  chksum    : 0xcff
+  Link count: 1
+   * Link ID: 23.0.0.3     
+     Data   : 23.0.0.2     
+     Link Type: TransNet     
+     Metric : 1
+
+  Type      : Router
+  Ls id     : 3.3.3.3
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1421 
+  Len       : 36 
+  Options   :  ABR  E  
+  seq#      : 80000005 
+  chksum    : 0xcb36
+  Link count: 1
+   * Link ID: 23.0.0.3     
+     Data   : 23.0.0.3     
+     Link Type: TransNet     
+     Metric : 1
+		         Area: 0.0.0.2
+		 Link State Database 
+
+
+  Type      : Router
+  Ls id     : 4.4.4.4
+  Adv rtr   : 4.4.4.4  
+  Ls age    : 1217 
+  Len       : 48 
+  Options   :  ASBR  E  
+  seq#      : 80000006 
+  chksum    : 0xb2af
+  Link count: 2
+   * Link ID: 34.0.0.3     
+     Data   : 34.0.0.4     
+     Link Type: TransNet     
+     Metric : 1
+   * Link ID: 192.168.4.0  
+     Data   : 255.255.255.0 
+     Link Type: StubNet      
+     Metric : 1 
+     Priority : Low
+
+  Type      : Router
+  Ls id     : 3.3.3.3
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1327 
+  Len       : 48 
+  Options   :  ABR  E  
+  seq#      : 80000007 
+  chksum    : 0xd695
+  Link count: 2
+   * Link ID: 34.0.0.3     
+     Data   : 34.0.0.3     
+     Link Type: TransNet     
+     Metric : 1
+   * Link ID: 192.168.3.0  
+     Data   : 255.255.255.0 
+     Link Type: StubNet      
+     Metric : 1 
+     Priority : Low
+
+<AR3>dis ospf lsdb net
+
+	 OSPF Process 1 with Router ID 3.3.3.3
+		         Area: 0.0.0.0
+		 Link State Database 
+
+
+  Type      : Network
+  Ls id     : 23.0.0.3
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1445 
+  Len       : 32 
+  Options   :  E  
+  seq#      : 80000002 
+  chksum    : 0xa579
+  Net mask  : 255.255.255.0
+  Priority  : Low
+     Attached Router    3.3.3.3
+     Attached Router    2.2.2.2
+		         Area: 0.0.0.2
+		 Link State Database 
+
+
+  Type      : Network
+  Ls id     : 34.0.0.3
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1347 
+  Len       : 32 
+  Options   :  E  
+  seq#      : 80000002 
+  chksum    : 0x7a91
+  Net mask  : 255.255.255.0
+  Priority  : Low
+     Attached Router    3.3.3.3
+     Attached Router    4.4.4.4
+
+<AR3>dis ospf lsdb sum
+
+	 OSPF Process 1 with Router ID 3.3.3.3
+		         Area: 0.0.0.0
+		 Link State Database 
+
+
+  Type      : Sum-Net
+  Ls id     : 192.168.4.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1342 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x479a
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 2
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 34.0.0.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1421 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x5fce
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 1
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 192.168.3.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1407 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x489b
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 1
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 192.168.1.0
+  Adv rtr   : 2.2.2.2  
+  Ls age    : 1534 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x8662
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 2
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 12.0.0.0
+  Adv rtr   : 2.2.2.2  
+  Ls age    : 1534 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x9cab
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 1
+  Priority  : Low
+		         Area: 0.0.0.2
+		 Link State Database 
+
+
+  Type      : Sum-Net
+  Ls id     : 23.0.0.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1423 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0xee4a
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 1
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 192.168.1.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1423 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x7271
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 3
+  Priority  : Low
+
+  Type      : Sum-Net
+  Ls id     : 12.0.0.0
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1423 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x88ba
+  Net mask  : 255.255.255.0
+  Tos 0  metric: 2
+  Priority  : Low
+
+<AR3>dis ospf lsdb asbr
+
+	 OSPF Process 1 with Router ID 3.3.3.3
+		         Area: 0.0.0.0
+		 Link State Database 
+
+
+  Type      : Sum-Asbr
+  Ls id     : 4.4.4.4
+  Adv rtr   : 3.3.3.3  
+  Ls age    : 1279 
+  Len       : 28 
+  Options   :  E  
+  seq#      : 80000001 
+  chksum    : 0x54ea
+  Tos 0  metric: 1
+		         Area: 0.0.0.2
+		 Link State Database 
