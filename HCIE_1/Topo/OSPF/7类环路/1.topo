@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="F0C27EA6-0A3F-4f34-B794-7E1F2B2ED3B6" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-23-48-36" com_port="2003" bootmode="0" cx="1413.000000" cy="327.000000" edit_left="1440" edit_top="381">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="DE8DA802-0F3F-4608-B1B0-1EADB1610558" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AB-62-B4" com_port="2001" bootmode="0" cx="1135.000000" cy="327.000000" edit_left="1162" edit_top="381">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="BAA91677-E3B1-4155-B80D-60A0F6EEB1E8" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BB-0A-90" com_port="2000" bootmode="0" cx="894.000000" cy="327.000000" edit_left="921" edit_top="381">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="3E58EDEE-253C-43de-8873-311F6A1D02EE" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-CD-65-95" com_port="2002" bootmode="0" cx="1135.000000" cy="557.000000" edit_left="1162" edit_top="611">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="BAA91677-E3B1-4155-B80D-60A0F6EEB1E8" destDeviceID="DE8DA802-0F3F-4608-B1B0-1EADB1610558">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="964.183777" srcBoundRect_Y="354.000000" srcOffset_X="-18.000000" srcOffset_Y="6.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="1118.816284" tarBoundRect_Y="354.000000" tarOffset_X="-28.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="DE8DA802-0F3F-4608-B1B0-1EADB1610558" destDeviceID="3E58EDEE-253C-43de-8873-311F6A1D02EE">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="1162.000000" srcBoundRect_Y="397.183777" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="1162.000000" tarBoundRect_Y="540.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="DE8DA802-0F3F-4608-B1B0-1EADB1610558" destDeviceID="F0C27EA6-0A3F-4f34-B794-7E1F2B2ED3B6">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="1205.183716" srcBoundRect_Y="354.000000" srcOffset_X="-11.000000" srcOffset_Y="8.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1396.816284" tarBoundRect_Y="354.000000" tarOffset_X="-46.000000" tarOffset_Y="5.000000" />
+        </line>
+        <line srcDeviceID="BAA91677-E3B1-4155-B80D-60A0F6EEB1E8" destDeviceID="3E58EDEE-253C-43de-8873-311F6A1D02EE">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="952.240173" srcBoundRect_Y="383.814270" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="1130.759888" tarBoundRect_Y="554.185730" tarOffset_X="-50.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="16744448" upleftcorner="876,258" width="266" height="395" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="1149,258" width="284" height="396" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1431,344" endpt="1491,304" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1112,398" endpt="1025,400" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1025,400" endpt="1041,391" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1024,409" endpt="1117,501" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1117,501" endpt="1090,495" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1119,494" endpt="1114,414" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1114,414" endpt="1114,414" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1113,416" endpt="1124,427" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1202,416" endpt="1389,415" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1389,415" endpt="1389,415" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1386,417" endpt="1372,426" borderStyle="0" borderWidth="1" />
+        <shape type="0" filloption="1" color="16744448" upleftcorner="0,0" width="0" height="0" startpt="1372,426" endpt="1372,426" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips />
+</topo>

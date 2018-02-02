@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.2.00.510">
     <devices>
-        <dev id="798FD0D5-573D-4bfc-91FC-A24F0E4DAA8A" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-0B-50-4F" com_port="2000" bootmode="0" cx="871.000000" cy="65.000000" edit_left="898" edit_top="119">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="1" />
-                <interface sztype="Ethernet" interfacename="GE" count="2" />
-            </slot>
-        </dev>
         <dev id="389D01E2-E27E-4264-BBBF-C9D786626BB5" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-F5-5E-28" com_port="2001" bootmode="0" cx="1225.000000" cy="65.000000" edit_left="1252" edit_top="119">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
-            </slot>
-        </dev>
-        <dev id="E8F8AEF7-D769-464c-B65C-BCE4869EDF3B" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F3-31-27" com_port="2004" bootmode="0" cx="1053.000000" cy="346.000000" edit_left="1080" edit_top="400">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
         <dev id="DA3B8020-9F3C-4171-93B2-835B5CC26FDB" name="LSW7" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-B4-4C-5D" com_port="2008" bootmode="0" cx="986.000000" cy="484.000000" edit_left="1013" edit_top="538">
@@ -36,11 +25,6 @@
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="51E308A2-B56A-408d-BBC4-5F5FEDDC88E2" name="LSW4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-0E-40-7C" com_port="2005" bootmode="0" cx="1325.000000" cy="346.000000" edit_left="1352" edit_top="400">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
-            </slot>
-        </dev>
         <dev id="177AA53B-80A4-4aa3-8ECE-377A1BF55312" name="LSW9" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-25-33-92" com_port="2010" bootmode="0" cx="1256.000000" cy="484.000000" edit_left="1283" edit_top="538">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
@@ -51,11 +35,6 @@
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
-            </slot>
-        </dev>
-        <dev id="E00E28EE-9537-4d1c-A960-0B7AB4C02B89" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-D7-37-53" com_port="2003" bootmode="0" cx="792.000000" cy="346.000000" edit_left="819" edit_top="400">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
         <dev id="C58A6051-796E-47b7-BF80-79196376B882" name="PC4" poe="0" model="PC" settings=" -simpc_ip 192.168.40.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.40.1  -simpc_mac 54-89-98-90-7A-BA  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-90-7A-BA" com_port="0" bootmode="0" cx="1133.000000" cy="639.000000" edit_left="1160" edit_top="693">
@@ -89,14 +68,35 @@
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="C71DCE60-2575-47d9-A02F-D6F02B0B2DCF" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-2E-11-93" com_port="2002" bootmode="0" cx="1053.000000" cy="213.000000" edit_left="1120" edit_top="238">
+        <dev id="7FEF18FA-EB38-4b90-A750-9BD80B81B5C1" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-A4-38-3D  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A4-38-3D" com_port="0" bootmode="0" cx="716.000000" cy="639.000000" edit_left="743" edit_top="693">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="798FD0D5-573D-4bfc-91FC-A24F0E4DAA8A" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-0B-50-4F" com_port="2000" bootmode="0" cx="871.000000" cy="65.000000" edit_left="898" edit_top="119">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="E00E28EE-9537-4d1c-A960-0B7AB4C02B89" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-D7-37-53" com_port="2003" bootmode="0" cx="792.000000" cy="346.000000" edit_left="819" edit_top="400">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="7FEF18FA-EB38-4b90-A750-9BD80B81B5C1" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-A4-38-3D  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A4-38-3D" com_port="0" bootmode="0" cx="716.000000" cy="639.000000" edit_left="743" edit_top="693">
+        <dev id="E8F8AEF7-D769-464c-B65C-BCE4869EDF3B" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F3-31-27" com_port="2004" bootmode="0" cx="1053.000000" cy="346.000000" edit_left="1080" edit_top="400">
             <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="51E308A2-B56A-408d-BBC4-5F5FEDDC88E2" name="LSW4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-0E-40-7C" com_port="2005" bootmode="0" cx="1325.000000" cy="346.000000" edit_left="1352" edit_top="400">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="C71DCE60-2575-47d9-A02F-D6F02B0B2DCF" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-2E-11-93" com_port="2002" bootmode="0" cx="1053.000000" cy="213.000000" edit_left="1120" edit_top="238">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
     </devices>
